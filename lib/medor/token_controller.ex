@@ -3,10 +3,6 @@ defmodule Medor.TokenController do
     model_info = Medor.Utils.model_info(opts)
 
     quote do
-      use Phoenix.Controller
-
-      plug :action
-
       def auth(conn, params) do
         Medor.TokenAuthAction.call(conn, unquote(model_info), params)
       end
