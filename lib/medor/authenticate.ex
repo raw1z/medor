@@ -24,14 +24,5 @@ defmodule Medor.Authenticate do
         send_unauthorized(conn)
     end
   end
-
-  defp validate_token(token) do
-    secret = get_config_env(:secret)
-    if secret != nil do
-      Joken.decode(token, secret)
-    else
-      {:error, "internal error"}
-    end
-  end
 end
 
