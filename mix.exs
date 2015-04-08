@@ -3,7 +3,7 @@ defmodule Medor.Mixfile do
 
   def project do
     [app: :medor,
-     version: "0.3.0",
+     version: "0.4.0",
      elixir: "~> 1.0",
      deps: deps]
   end
@@ -26,7 +26,7 @@ defmodule Medor.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:phoenix , "0.11.0"},
+      {:phoenix , ">= 0.11.0"},
       {:plug, ">= 0.10.0"},
       {:cowboy, "~> 1.0"},
       {:joken, "0.11.0"},
