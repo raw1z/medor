@@ -3,7 +3,7 @@ defmodule Medor.Mixfile do
 
   def project do
     [app: :medor,
-     version: "0.2.0",
+     version: "0.3.0",
      elixir: "~> 1.0",
      deps: deps]
   end
@@ -29,7 +29,7 @@ defmodule Medor.Mixfile do
       {:phoenix , "0.10.0"},
       {:plug, ">= 0.10.0"},
       {:cowboy, "~> 1.0"},
-      {:joken, "0.8.1"},
+      {:joken, "0.11.0"},
       {:timex, "~> 0.13.3"},
       {:inflex, "~> 1.0.0"}
     ]
