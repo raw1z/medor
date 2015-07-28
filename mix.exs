@@ -30,8 +30,8 @@ defmodule Medor.Mixfile do
       {:plug, ">= 0.10.0"},
       {:cowboy, "~> 1.0"},
       {:joken, "0.11.0"},
-      {:timex, "~> 0.13.3"},
-      {:inflex, "~> 1.0.0"}
+      {:timex, "~> 0.16.0"},
+      {:inflex, "~> 1.4.1"}
     ]
   end
 end
