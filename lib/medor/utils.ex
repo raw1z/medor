@@ -62,6 +62,6 @@ defmodule Medor.Utils do
   end
 
   defp token_expiry_date_from_now() do
-    Date.convert(Date.shift(Date.now, secs: 36000), :secs)
+    Date.now |> Date.shift(secs: 36000) |> Date.to_secs
   end
 end
